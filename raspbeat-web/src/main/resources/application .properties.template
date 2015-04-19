@@ -1,0 +1,21 @@
+## --------------------------------------------------------------------------
+## endpoints
+## http://docs.spring.io/spring-boot/docs/1.2.3.RELEASE/reference/htmlsingle/#production-ready-endpoints
+## --------------------------------------------------------------------------
+endpoints.enabled=true
+
+
+## --------------------------------------------------------------------------
+## security 
+## google authentication
+## --------------------------------------------------------------------------
+google.client.id=<GOOGLE_ID>
+google.client.secret=<GOOGLE_SECRET>
+google.callback.path=/oauth2callback
+google.callback.url=http://localhost:8080/oauth2callback
+
+## --------------------------------------------------------------------------
+## application security configuration
+## --------------------------------------------------------------------------
+app.valid.user=<EMAIL_FOR_AUTHORIZATION>
+app.check.route.path=/**
